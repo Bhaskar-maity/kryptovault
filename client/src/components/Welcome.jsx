@@ -49,7 +49,7 @@ const Welcome = () => {
           </h1>
           <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base">
             Explore the crypto world. Buy and sell cryptocurrencies easily on
-            Krypto.
+            KryptoVault.
           </p>
           {!currentAccount && (
             <button
@@ -73,11 +73,11 @@ const Welcome = () => {
               Ethereum
             </div>
             <div className={`sm:rounded-bl-2xl ${companyCommonStyles}`}>
-              Web 3.0
+              Web 3.0 Protocol
             </div>
             <div className={companyCommonStyles}>Low Fees</div>
             <div className={`rounded-br-2xl ${companyCommonStyles}`}>
-              Blockchain
+              Blockchain Technology
             </div>
           </div>
         </div>
