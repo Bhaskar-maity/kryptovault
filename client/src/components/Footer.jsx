@@ -1,10 +1,28 @@
 import React from "react";
+import Tippy from "@tippyjs/react";
+import "tippy.js/dist/tippy.css";
 
 const devTeam = [
-  "Rupam Hari",
-  "Bhaskar Maity",
-  "Arushi Ballav",
-  "Proshanta Debnath",
+  {
+    id: 1,
+    name: "Rupam Hari",
+    githubLink: "https://github.com/hrupam",
+  },
+  {
+    id: 2,
+    name: "Bhaskar Maity",
+    githubLink: "https://github.com/Bhaskar-maity",
+  },
+  {
+    id: 3,
+    name: "Arushi Ballav",
+    githubLink: "https://github.com/arushiballav24036",
+  },
+  {
+    id: 4,
+    name: "Proshanta Debnath",
+    githubLink: "https://github.com/ProshantaDebnath",
+  },
 ];
 
 const Footer = () => (
@@ -17,8 +35,17 @@ const Footer = () => (
         <div className="dev-team">
           ----------- Dev Team -----------
           <div className="names">
-            {devTeam.map((item, index) => (
-              <span key={item + index}>{item}</span>
+            {devTeam.map((dev) => (
+              <Tippy placement="right" content={<span>GitHub Link</span>}>
+                <a
+                  href={dev.githubLink}
+                  target="_blank"
+                  rel="noreferrer"
+                  key={dev.id}
+                >
+                  {dev.name}
+                </a>
+              </Tippy>
             ))}
           </div>
         </div>

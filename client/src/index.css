@@ -122,13 +122,15 @@ body {
   flex-direction: column !important;
   justify-content: center !important;
   align-items: center !important;
-  font-family: "Audiowide", cursive;
+  /* font-family: "Audiowide", cursive; */
   margin-top: 15px !important;
-  font-size: larger;
+  font-size: large;
 }
 
-.dev-team .names span {
+.dev-team .names a {
   margin-top: 8px !important;
+  text-decoration: none;
+  margin-top: 2px;
 }
 
 @tailwind base;
